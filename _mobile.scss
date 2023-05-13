@@ -1,0 +1,180 @@
+@media (max-width: 767px){
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main_head {
+        padding-top: 32px;
+    }
+
+    .input_header {
+        display: none;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .menu_mob {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .logo {
+      &_img {
+        width: 99px;
+      }  
+    }
+
+    .catalog-nav {
+        gap: 16px;
+    }
+
+    .headerest {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        &_catalog {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &_cart {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 101px;
+        }
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .top_text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .top_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link_catalog {
+        font-size: 14px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        &_item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+
+    .footer {
+        &-content {
+            justify-content: center;
+            gap: 32px;
+        }
+        &-info {
+            gap: 100px;
+        }
+    }
+
+    .cart {
+        &_name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &_text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &_price {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &_img {
+            display: none;
+        }
+        &_button {
+            width: 166px;
+            height: 37px;
+            font-size: 12px;
+            line-height: 15px;
+            &-form {
+                font-size: 16px;
+                line-height: 20px;
+                width: 290px;
+                height: 41px;
+            }
+        }
+        &_button-box {
+            margin-top: 0;
+        }
+    }
+    .form {
+        grid-column: span 8;
+    }
+
+    .product_box {
+        padding-top: 48px;
+        &_catalog {
+            padding-top: 0;
+        }
+    }
+
+    .select {
+    margin-bottom: 32px;
+    }
+
+    .middle_catalog_block {
+    padding-top: 32px;  
+    padding-bottom: 32px;
+    }
+    .product {
+        &_link {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &_price {
+            font-size: 18px;
+            line-height: 22px;
+            &_cart {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &_sale {
+                font-size: 18px;
+                line-height: 22px;
+            &_cart {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            }
+        }
+    }
+}

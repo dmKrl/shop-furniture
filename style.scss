@@ -1,0 +1,585 @@
+$color-text: rgb(255, 255, 255);
+@keyframes logo {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.9);
+	}
+}
+
+/* Удаление дефолтных отступов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ГЛАВНАЯ СТРАНИЦА */
+
+
+.top {
+    height: 735px;
+    background-image: url(./pictures/topback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* HEADER */
+.main_head {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 63px;
+}
+
+.top-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.menu_mob {
+    display: none;
+}
+
+.headerest {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-text;
+    max-width: 792px;
+    &_catalog {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        color: $color-text;
+        max-width: 792px;
+        &_cart {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 70px;
+            color: $color-text;
+            max-width: 792px;
+        }
+    }
+}
+
+
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.top_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-text;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.link_catalog {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: $color-text;
+    padding-top: 16px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.input_header {
+    width: 288px;
+    height: 41px;
+    border: 1px solid $color-text;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.input_header::placeholder {
+    color: $color-text;
+}
+
+/* Ссылка логотип - Интерьер */
+.logo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $color-text;
+    &_img {
+        &:hover {
+            animation: logo 0.3s linear 0s 1 normal forwards;
+        }
+    }
+}
+
+/* Ссылки Каталог и Корзина */
+.link_header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text;
+}
+
+.link_header:hover {
+    text-decoration: underline;
+}
+
+.product_box {
+    padding-top: 64px;
+}
+
+.for-box {
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.for {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.for_link {
+    color: $color-text;
+}
+
+.for_item {
+    transition: all 0.3s;
+    height: 415px;
+    grid-column: span 4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    color: $color-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #000000;
+    }
+}
+
+.for_item_big {
+    grid-column: span 6;
+}
+
+.for_item_1 {
+    background-image: url(./pictures/for_1.jpg);
+}
+
+.for_item_2 {
+    background-image: url(./pictures/for_2.jpg);
+}
+
+.for_item_3 {
+    background-image: url(./pictures/for_3.jpg);
+}
+
+.for_item_4 {
+    background-image: url(./pictures/for_4.jpg);
+}
+
+.for_item_5 {
+    background-image: url(./pictures/for_5.jpg);
+}
+
+.product {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    padding: 8px;
+    box-sizing: border-box;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #ccc;
+    }
+}
+
+.product_img {
+    width: 100%;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.product-content {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.product_box-price {
+    display: flex;
+    gap: 32px;
+}
+
+.product_link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+
+.product_price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+    &_cart {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+    }
+}
+
+.product_price_sale {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: line-through;
+    color: #888888;
+    &_cart {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: line-through;
+        color: #888888;
+    }
+}
+
+
+.product_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+}
+
+
+/* Тег с подвалом */
+.footer-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Текст - получайте наши новости */
+.copy {
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    padding-bottom: 16px;
+}
+
+
+/* Кнопка с имейлом */
+.field {
+    background: $color-text;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    width: 275px;
+    height: 46px;
+    margin-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    &::placeholder {
+        color: #c4c4c4;
+    }
+}
+
+.footer-logo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+    &:hover {
+        animation: logo 0.3s linear 0s 1 normal forwards;
+    }
+}
+
+.footer-logo-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+}
+
+/* Кнопка сабки */
+.buttonsub {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid $color-text;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+    &:hover {
+        animation: logo 0.3s linear 0s 1 normal forwards;
+    }
+}
+
+.midle_catalog {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.midle_catalog_block {
+    padding-bottom: 64px;
+    padding-top: 39px;
+}
+
+
+
+.footer {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background: #F7F6F6;
+    background-position: center;
+    block-size: cover;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    width: 789px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    gap: 129px;
+}
+
+.nav.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+}
+
+.footer-contact:hover {
+    text-decoration: underline;
+}
+
+
+.main_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* КАТАЛОГ */
+.select {
+    position: relative;
+    width: 288px;
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    height: 41px;
+    padding-left: 14px;
+    padding-right: 22px;
+    background: none;
+    /* убираем фон */
+    border: 1px solid #ccc;
+    /* рамка */
+    border-radius: 20px;
+    -webkit-appearance: none;
+    /* Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* убираем дефолнтные стрелочки */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.select:after {
+    transition: all 0.3s;
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+    background-image: url(./pictures/select.svg);
+}
+
+
+
+.catalog {
+    height: 400px;
+    background-image: url(./pictures/catalog_pict.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-nav {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.breadcrumbs_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    &:hover span {
+        text-decoration: underline;
+    }
+}
+
+
+.breadcrumbs_link span:not(:last-child)::after {
+    content: '/';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product_box_catalog {
+    padding-top: 21px;
+}
+
+.product-content_catalog {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+
+@import 'basket';
+
+@import 'tablet';
+
+@import 'mobile';
