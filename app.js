@@ -15,9 +15,13 @@
 //         return false;
 //     }    
 // })
-
-
+let b = new Number(3);
+console.log(b)
 
 // // cartDelete.onclick = () => {
 // //     console.log('111');
 // // }
+
+// let number = 10;
+
+// console.log(number++ + ++number ++ number + '100' + number-- )
